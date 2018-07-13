@@ -36,11 +36,10 @@ class MainActivity : AppCompatActivity() {
            path = "/storage/sdcard0/"
            file =File(path)
         }
-        else{
             var values = file.list()
             var mya = ArrayAdapter<String>(this@MainActivity,android.R.layout.simple_list_item_single_choice,values)
             lv.adapter = mya
-        }
+
     }
 
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
@@ -52,5 +51,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this@MainActivity,"Give Permission Before Use",Toast.LENGTH_LONG).show()
         }
     }
+
+    
 
 }
