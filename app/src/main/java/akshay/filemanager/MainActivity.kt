@@ -42,7 +42,6 @@ class MainActivity : AppCompatActivity() {
             var values = file.list()
             var mya = ArrayAdapter<String>(this@MainActivity,android.R.layout.simple_list_item_single_choice,values)
             lv.adapter = mya
-
     }
 
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
